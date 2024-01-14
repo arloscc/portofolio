@@ -21,7 +21,7 @@ export default function Hero() {
           buttonClicked ? "bg-blue-300" : "bg-indigo-950 "
         }`}
       >
-        <div className="text-white font-bold text-4xl h-screen flex items-center">
+        <div className=" mx-12  text-white font-bold text-4xl h-screen flex items-center">
           <div>
             <h1>
               <span className="text-blue-900 drop-shadow-md text-5xl"> Hello ,</span>{" "}
@@ -35,22 +35,24 @@ export default function Hero() {
         </div>
 
         <div>
+          <Link href="https://www.instagram.com/kevinamaydiva_/">
           <Image
             className=" scale-90 rounded-3xl hover:scale-100 duration-300 drop-shadow-xl"
-            src="/profile.jpeg"
+            src="/profile.png"
             width={500}
             height={500}
             alt="Picture of the author"
           />
+          </Link>
         </div>
       </div>
 
-      <div className=" scale-90 flex justify-center -my-28 hover:scale-100 duration-300">
+      <div className="   sm:scale-90 flex justify-center -my-28 hover:scale-100 duration-300">
         <button
-          className="p-4   bg-indigo-900 rounded-3xl hover:bg-blue-950  text-white hover:text-slate-300 duration-300"
+          className="p-4 scale-150   sm:scale-90  bg-indigo-900 rounded-3xl hover:bg-blue-950  text-white hover:text-slate-300 duration-300"
           onClick={handleButtonClick}
         >
-          <Link className=" font-bold " href="#Skills">
+          <Link className=" font-bold  " href="#Skills">
             There What I can do
           </Link>
         </button>

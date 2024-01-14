@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter , Poppins , Whisper} from 'next/font/google'
+import { Inter , Poppins , Whisper , Fira_Code} from 'next/font/google'
 import './globals.css'
 
 const poppins = Poppins({ subsets: ['latin'] , weight:['400'] , variable: '--font-inter'})
 const whisper = Whisper({ variable: '--font-whisper' ,subsets: ['latin'] , weight:['400']})
+const fira_Code = Fira_Code({ variable: '--font-fira' ,subsets: ['latin'] , weight:['400']})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <body className={`${poppins.variable} ${whisper.variable}`}>{children}</body>
+      <body className={`${poppins.variable}  ${fira_Code.variable} ${whisper.variable}`}>{children}</body>
     </html>
   )
 }

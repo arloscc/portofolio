@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       <div
-        className={` flex justify-center items-center gap-x-80 p-4 transition-all ${
+        className={` flex justify-center items-center p-4 transition-all ${
           buttonClicked ? "bg-blue-300" : "bg-indigo-950 "
         }`}
       >
@@ -37,7 +37,7 @@ export default function Hero() {
         <div>
           <Link href="https://www.instagram.com/kevinamaydiva_/">
           <Image
-            className=" scale-90 rounded-3xl hover:scale-100 duration-300 drop-shadow-xl"
+            className="-mx-12 scale-75 rounded-3xl hover:scale-90 duration-300 drop-shadow-xl "
             src="/profile.png"
             width={500}
             height={500}
@@ -47,15 +47,33 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="   sm:scale-90 flex justify-center -my-28 hover:scale-100 duration-300">
+<div className="flex justify-center  top-[-30rem] relative sm:top-[-10rem]  sm:relative ">
+
+      <div className="px-12 sm:p-0  sm:scale-100  hover:scale-90 duration-300">
+      <div className="hover:scale-125 duration-300 scale-150 px-12 sm:p-2 sm:scale-75">
         <button
-          className="p-4 scale-150   sm:scale-90  bg-indigo-900 rounded-3xl hover:bg-blue-950  text-white hover:text-slate-300 duration-300"
+          className="p-4 hover:scale-100  sm:scale-90   bg-indigo-900 rounded-3xl hover:bg-blue-950  text-white hover:text-slate-300 duration-300"
           onClick={handleButtonClick}
         >
           <Link className=" font-bold  " href="#Skills">
             There What I can do
           </Link>
         </button>
+      </div>
+      </div>
+      
+      <div className="px-12 sm:p-0    sm:scale-100   hover:scale-90 duration-300">
+        <div className="hover:scale-125 duration-300 scale-150  px-12 sm:p-2  sm:scale-75">
+        <button
+          className="p-4 hover:scale-100 duration-300  sm:scale-90   bg-indigo-900 rounded-3xl hover:bg-blue-950  text-white hover:text-slate-300 "
+          onClick={handleButtonClick}
+        >
+          <Link className=" font-bold  " href="#BIO">
+            My Bio
+          </Link>
+        </button>
+      </div>
+      </div>
       </div>
     </>
   );
